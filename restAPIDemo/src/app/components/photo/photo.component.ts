@@ -12,7 +12,7 @@ import { PhotosService } from '../../services/photos.service';
   styleUrls: ['./photo.component.css']
 })
 export class PhotoComponent implements OnInit {
-  photos: PhotoModel[];
+  photos?: PhotoModel[];
   constructor(
     private photosService: PhotosService
   ) { }

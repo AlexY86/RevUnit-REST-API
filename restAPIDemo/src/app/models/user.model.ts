@@ -1,9 +1,9 @@
 export class UserModel {
-    id: number;
-    name: string;
-    username: string;
-    email: string;
-    address: {
+    id?: number;
+    name?: string;
+    username?: string;
+    email?: string;
+    address?: {
       street: string,
       suite: string,
       city: string,
@@ -13,9 +13,9 @@ export class UserModel {
         lng: number
       }
     }
-    phone: number;
-    website: string;
-    company: {
+    phone?: number;
+    website?: string;
+    company?: {
       name: string,
       catchPhrase: string,
       bs: string

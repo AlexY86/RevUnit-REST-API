@@ -17,8 +17,6 @@ export class PostCreateComponent implements OnInit {
   ) { }
 
   addPost(post: PostModel) {
-    post.title = post.title.trim()
-    post.body = post.body.trim()
     this.postsService.addPost(post).subscribe()
   }
 

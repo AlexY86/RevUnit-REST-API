@@ -23,13 +23,14 @@ import { CommentComponent } from './components/comment/comment.component';
 import { PostCreateComponent } from './components/post-creator/post-creator.component';
 
 @NgModule({
-  declarations: [
-    //BrowserModule,
-    //FormsModule,
-    //HttpClientModule,
-    //AppRoutingModule
-  ],
   imports: [
+    BrowserModule,
+    FormsModule,
+    HttpClientModule,
+    AppRoutingModule,
+    HomeComponent
+  ],
+  declarations: [
     AppComponent,
     HeaderComponent,
     HomeComponent,
@@ -43,7 +44,9 @@ import { PostCreateComponent } from './components/post-creator/post-creator.comp
     CommentComponent,
     PostCreateComponent
   ],
-  providers: [PostsService, UsersService, AlbumsService, CommentsService, PhotosService],
-  bootstrap: [AppComponent]
+  bootstrap: [
+    AppComponent
+  ],
+  providers: [PostsService, UsersService, AlbumsService, CommentsService, PhotosService]
 })
 export class AppModule { }
