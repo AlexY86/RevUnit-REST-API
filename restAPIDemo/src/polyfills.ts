@@ -63,3 +63,12 @@ import 'zone.js';  // Included with Angular CLI.
 /***************************************************************************************************
  * APPLICATION IMPORTS
  */
+
+/***************************************************************************************************
+ * Zone JS is required by Angular itself.
+ */
+ import 'zone.js/dist/zone';  // Included with Angular CLI.
+
+ /** Evergreen browsers require these. **/
+import 'core-js/es6/reflect';
+import 'core-js/es7/reflect';
