@@ -11,7 +11,7 @@ import { CommentsService } from '../../services/comments.service';
   styleUrls: ['./comment.component.css']
 })
 export class CommentComponent implements OnInit {
-  comments: CommentModel[]
+  comments?: CommentModel[]
   constructor(
     private commentsService: CommentsService
   ) { }

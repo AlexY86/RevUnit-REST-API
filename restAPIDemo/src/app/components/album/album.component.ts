@@ -12,7 +12,7 @@ import { AlbumsService } from '../../services/albums.service';
   styleUrls: ['./album.component.css']
 })
 export class AlbumComponent implements OnInit {
-  albums: AlbumModel[];
+  albums?: AlbumModel[];
   constructor(
     private albumsService: AlbumsService
   ) { }

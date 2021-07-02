@@ -12,7 +12,7 @@ import { UsersService } from '../../services/users.service';
   styleUrls: ['./user.component.css']
 })
 export class UserComponent implements OnInit {
-  users: UserModel[]
+  users?: UserModel[]
   constructor(
     private usersService: UsersService
    ) { }

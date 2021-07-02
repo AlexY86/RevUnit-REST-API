@@ -16,8 +16,8 @@ import { UsersService } from '../../services/users.service';
 })
 export class PostDisplayComponent implements OnInit {
 
-  posts: PostModel[];
-  users: UserModel[];
+  posts?: PostModel[];
+  users?: UserModel[];
 
   constructor(
     private postsService: PostsService,
