@@ -1,1 +1,6 @@
-<p>comment works!</p>
+<div *ngFor="let comment of comments">
+    <h2>{{ comment.id }}</h2>
+    <p>{{ comment.name }}</p>
+    <p>{{ comment.email }}</p>
+    <p>{{ comment.body }}</p>
+  </div>
