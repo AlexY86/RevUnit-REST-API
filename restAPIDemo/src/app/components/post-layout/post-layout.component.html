@@ -1,7 +1,5 @@
 <div class="card m-3" *ngFor="let post of posts">
     <div class="card-body">
-      <h4 class="card-title">{{ post.title }}</h4>
-      <small> <strong>Name: </strong> {{ post.name }}</small>
-      <p>{{ post.body }}</p>
+      <h4 class="card-title" [routerLink]="['/comment']" routerLinkActive="router-link-active" >{{ post.title | uppercase }}</h4>
     </div>
   </div>
